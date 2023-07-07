@@ -13,7 +13,7 @@ app.get('/api/headlines', (req, res) => {
   const language = req.query.language || 'en';
   const sortBy = req.query.sortBy || '';
 
-  const apiKey = '2ff1c244141d41da9c289cecc2ce7c0d';
+  const apiKey = 'YOUR_API_KEY';
   let apiUrl = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`;
 
   // Append optional filters
