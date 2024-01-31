@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Aggregator</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <header>
+    <div class="video-container">
+      <video autoplay loop muted playsinline>
+        <source src="videoplayback.mp4" type="video/mp4">
+      </video>
+    </div>
+     
+    <div class="logo-container">
+      <img src="logo.png" alt="News Aggregator Logo">
+    </div>
+    <h1>News Station</h1>
+  </header>
+
+  <div id="filters">
+    <div class="filter-group">
+      <input type="text" id="query" placeholder="Search keyword">
+      <select id="country">
+        <option value="">All countries</option>
+        <option value="us">United States</option>
+        <option value="us">United States</option>
+        <option value="gb">United Kingdom</option>      
+        <option value="jp">Japan</option>
+        <option value="in">India</option>
+        <option value="sa">Saudi Arabia</option>
+        <option value="ca">Canada</option>
+        <option value="au">Australia</option>
+        <option value="de">Germany</option>
+        <option value="fr">France</option>
+        <option value="cn">China</option>
+        <option value="kr">Korea, Republic</option>
+        <option value="my">Malaysia</option>
+        <option value="br">Brazil</option>
+        <option value="mx">Mexico</option>
+        <option value="ru">Russia</option>
+        <option value="au">Australia</option>
+        <option value="at">Austria</option>
+        <option value="ae">United Arab Emirates</option>
+        <option value="ua">Ukraine</option>
+        <option value="th">Thailand</option>
+        <option value="tw">Taiwan</option>
+        <option value="ch">Switzerland</option>
+        <option value="za">Switzerland</option>
+        <option value="ph">	Philippines</option>
+        <option value="pl">Poland	</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <input type="date" id="fromDate" placeholder="From Date">
+      <input type="date" id="toDate" placeholder="To Date">
+    </div>
+    <div class="filter-group">
+      <select id="sortBy">
+        <option value="">Sort By</option>
+        <option value="relevancy">Relevancy</option>
+        <option value="popularity">Popularity</option>
+        <option value="publishedAt">Published At</option>
+      </select>
+      <button id="applyFilters">Apply Filters</button>
+    </div>
+  </div>
+
+  <div id="newsContainer"></div>
+
+  <footer>
+    <p>Welcome to News Station</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
